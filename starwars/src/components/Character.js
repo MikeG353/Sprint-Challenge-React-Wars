@@ -4,31 +4,27 @@ import styled from 'styled-components';
 
 // Styled component
 const CharacterCard = styled.div`
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    width: 10%;
-   &img{
-       width:10%;
-       
-       
-   }
-    
+   width: 50%;
 
+   .card-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img {
+        width:50%;
+        flex-grow: 1;
+    }
 `
-
-
-
 
 function Character(character){
 
     return (
 
         <CharacterCard>
-
-            <img src={character.image}></img>
-            <h2>{character.name}</h2>            
-
+            <div className={'card-container'}>
+                <img src={character.image}></img>
+                <h2>{character.name}</h2>            
+            </div>
         </CharacterCard>
 
     );
