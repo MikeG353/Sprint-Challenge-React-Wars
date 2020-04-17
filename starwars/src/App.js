@@ -34,7 +34,7 @@ const App = () => {
     <div className="App">
       {
         characterList.map(character => {
-          return <Character character={character} key={character.id} name={character.name} />
+          return <Character character={character} key={character.id} name={character.name} image={character.image}/>
         })
         
       }

@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  /* text-align: center; */
+  max-width: 100%;
 }
 .Header {
   color: #443e3e;
